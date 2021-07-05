@@ -3,6 +3,7 @@ import FormCtrl from "./form.controller.js";
 const router = express.Router()
 
 router.route("/addForm")
-  .post(FormCtrl.apiPostReview)
+  .post(FormCtrl.apiPostForm)
+  .get(FormCtrl.apiGetForm)
 
 export default router
