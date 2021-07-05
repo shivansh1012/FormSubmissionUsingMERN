@@ -1,4 +1,5 @@
-import Form from "./components/Form";
+import Form from "./components/Client/Form.js";
+import FormData from "./components/Admin/FormData.js"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
@@ -9,6 +10,11 @@ function App() {
             return
           }}>
             <Form />
+          </Route>
+          <Route path="/superadmin" render={() => {
+            return
+          }}>
+            <FormData />
           </Route>
         </Switch>
       </Router>

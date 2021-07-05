@@ -1,9 +1,9 @@
 import http from "../http-common";
 
-class RestaurantDataService {
+class FormDataService {
   createForm(data) {
     return http.post("/addForm", data);
   }
 }
 
-export default new RestaurantDataService();
+export default new FormDataService();
