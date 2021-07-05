@@ -3,7 +3,7 @@ import React from 'react'
 export default function FormData() {
     return (
         <div>
-            <h2>Superadmin Page</h2>
+            <h2 className="text-center">Admin Page</h2>
         </div>
     )
 }
