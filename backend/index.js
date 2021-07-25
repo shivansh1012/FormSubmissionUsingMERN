@@ -5,7 +5,7 @@ import formDAO from "./dao/formDAO.js"
 dotenv.config()
 const MongoClient = mongodb.MongoClient
 
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 5000
 
 MongoClient.connect(
   process.env.FORM_DB_URI,
