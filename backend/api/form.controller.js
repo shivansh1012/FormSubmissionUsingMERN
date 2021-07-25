@@ -28,7 +28,23 @@ export default class FormController {
     }
   }
 
-  static async apiGetForm(req,res,next) {
+  static async apiGetForms(req, res, next) {
     
+    let filters = {}
+    if (req.query.country) {
+      filters.country = req.query.country
+    } else if (req.query.state) {
+      filters.state = req.query.state
+    } else if (req.query.city) {
+      filters.city = req.query.city
+    }
+
+    const { formsList, totalForms } = await FormDAO.getForms({ filters })
+    let response = {
+      formsList: formsList,
+      filters: filters,
+      total_results: totalForms,
+    }
+    res.json(response)
   }
 }

@@ -5,18 +5,20 @@ function App() {
   return (
     <>
       <Router>
+
         <Switch>
         <Route exact path="/" render={() => {
             return
           }}>
             <Form />
           </Route>
-          <Route path="/superadmin" render={() => {
+          <Route path="/list" render={() => {
             return
           }}>
             <FormData />
           </Route>
         </Switch>
+        
       </Router>
     </>
   );
