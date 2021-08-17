@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FormDataService from "../../services/serviceForm";
+import FormDataService from "../services/serviceForm.js";
 
 export default function Form(props) {
     const [firstName, setFirstName] = useState("");

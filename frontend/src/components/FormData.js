@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import FormDataService from "../../services/serviceForm";
+import FormDataService from "../services/serviceForm.js";
 import * as ReactBootStrap from "react-bootstrap";
 
 export default function FormData() {
@@ -35,7 +35,6 @@ export default function FormData() {
     return (
         <div>
             <h2 className="text-center">Admin Page</h2>
-            <h3 className="text-center">Check Console for data</h3>
             <ReactBootStrap.Table striped bordered hover>
                 <thead>
                     <tr>
